@@ -68,6 +68,32 @@ jobs:
         svn checkout https://github.com/fw876/helloworld/trunk package/helloworld
         svn checkout https://github.com/swxk521/luci-app-eqos/trunk package/luci-app-eqos
         svn checkout https://github.com/KFERMercer/luci-app-tcpdump/trunk package/luci-app-tcpdump
+        sed -i 's/autosamba //g' target/linux/x86/Makefile
+        sed -i 's/luci-app-adbyby-plus //g' target/linux/x86/Makefile
+        sed -i 's/luci-app-ipsec-vpnd //g' target/linux/x86/Makefile
+        sed -i 's/luci-proto-bonding //g' target/linux/x86/Makefile
+        sed -i 's/luci-app-unblockmusic //g' target/linux/x86/Makefile
+        sed -i 's/luci-app-zerotier //g' target/linux/x86/Makefile
+        sed -i 's/luci-app-xlnetacc //g' target/linux/x86/Makefile
+        sed -i 's/luci-app-uugamebooster //g' target/linux/x86/Makefile
+        sed -i 's/ath10k-firmware-qca988x //g' target/linux/x86/Makefile
+        sed -i 's/ath10k-firmware-qca9888 //g' target/linux/x86/Makefile
+        sed -i 's/ath10k-firmware-qca9984 //g' target/linux/x86/Makefile
+        sed -i 's/brcmfmac-firmware-43602a1-pcie //g' target/linux/x86/Makefile
+        sed -i 's/kmod-usb-net //g' target/linux/x86/Makefile
+        sed -i 's/kmod-usb-net-asix //g' target/linux/x86/Makefile
+        sed -i 's/kmod-usb-net-asix-ax88179 //g' target/linux/x86/Makefile
+        sed -i 's/kmod-usb-net-rtl8150 //g' target/linux/x86/Makefile
+        sed -i 's/kmod-usb-net-rtl8152-vendor //g' target/linux/x86/Makefile
+        sed -i 's/kmod-8139too //g' target/linux/x86/Makefile
+        sed -i 's/kmod-8139cp //g' target/linux/x86/Makefile
+        sed -i 's/kmod-r8125 //g' target/linux/x86/Makefile
+        sed -i 's/kmod-rt2800-usb //g' target/linux/x86/Makefile
+        sed -i 's/kmod-ath10k //g' target/linux/x86/Makefile
+        sed -i 's/kmod-ath9k-htc //g' target/linux/x86/Makefile
+        sed -i 's/kmod-ath9k //g' target/linux/x86/Makefile
+        sed -i 's/kmod-ath5k //g' target/linux/x86/Makefile
+        sed -i 's/DEFAULT_PACKAGES += /DEFAULT_PACKAGES += ipv6helper ddns-scripts_cloudflare.com-v4 ddns-scripts_godaddy.com-v1/g luci-app-eqos luci-app-frpc luci-app-tcpdump luci-app-openvpn-server luci-app-wrtbwmon' target/linux/x86/Makefile
 
     - name: Load custom feeds
       run: |
