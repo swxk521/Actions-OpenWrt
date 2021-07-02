@@ -94,6 +94,7 @@ jobs:
         sed -i 's/kmod-ath9k //g' target/linux/x86/Makefile
         sed -i 's/kmod-ath5k //g' target/linux/x86/Makefile
         sed -i 's/wpad //g' target/linux/x86/Makefile
+        sed -i 's/luci-app-qbittorrent //g' target/linux/x86/Makefile
         sed -i 's/DEFAULT_PACKAGES +=/DEFAULT_PACKAGES += ipv6helper ddns-scripts_cloudflare.com-v4 ddns-scripts_godaddy.com-v1 luci-app-eqos luci-app-frpc luci-app-tcpdump luci-app-openvpn-server luci-app-wrtbwmon luci-app-ttyd/g' target/linux/x86/Makefile
         sed -i 's/luci-app-vsftpd //g' include/target.mk
         sed -i 's/luci-app-unblockmusic //g' include/target.mk
