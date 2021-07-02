@@ -93,7 +93,7 @@ jobs:
         sed -i 's/kmod-ath9k-htc //g' target/linux/x86/Makefile
         sed -i 's/kmod-ath9k //g' target/linux/x86/Makefile
         sed -i 's/kmod-ath5k //g' target/linux/x86/Makefile
-        sed -i 's/DEFAULT_PACKAGES += /DEFAULT_PACKAGES += ipv6helper ddns-scripts_cloudflare.com-v4 ddns-scripts_godaddy.com-v1/g luci-app-eqos luci-app-frpc luci-app-tcpdump luci-app-openvpn-server luci-app-wrtbwmon' target/linux/x86/Makefile
+        sed -i 's/DEFAULT_PACKAGES += /DEFAULT_PACKAGES += ipv6helper ddns-scripts_cloudflare.com-v4 ddns-scripts_godaddy.com-v1 luci-app-eqos luci-app-frpc luci-app-tcpdump luci-app-openvpn-server luci-app-wrtbwmon/g' target/linux/x86/Makefile
 
     - name: Load custom feeds
       run: |
