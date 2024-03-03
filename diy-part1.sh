@@ -22,7 +22,7 @@ echo 'src-git diy https://github.com/swxk521/diy' >>feeds.conf.default
 echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
 echo 'src-git passwallpackages https://github.com/xiaorouji/openwrt-passwall-packages' >>feeds.conf.default
 
-cd..
+cd ..
 git clone https://github.com/kiddin9/openwrt-packages packages
 cp -rf packages/luci-app-kcptun openwrt/package/lean/luci-app-kcptun
 cp -rf packages/luci-app-udp2raw openwrt/package/lean/luci-app-udp2raw
