@@ -27,3 +27,5 @@ git clone https://github.com/kiddin9/openwrt-packages packages
 cp -rf packages/luci-app-kcptun openwrt/package/lean/luci-app-kcptun
 cp -rf packages/luci-app-udp2raw openwrt/package/lean/luci-app-udp2raw
 cp -rf packages/luci-app-speederv2 openwrt/package/lean/luci-app-speederv2
+rm -rf packages
+
