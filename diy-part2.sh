@@ -19,16 +19,14 @@ sed -i 's/99/198/g' feeds/luci/applications/luci-app-frps/luasrc/controller/frps
 
 sed -i 's/0.53.2/0.54.0/g' feeds/packages/net/frp/Makefile
 sed -i 's/ff2a4f04e7732bc77730304e48f97fdd062be2b142ae34c518ab9b9d7a3b32ec/c09d8610b5eb02c0b1851459ace7751fe80a06b2373a6d5d40631a08e8ac64ae/g' feeds/packages/net/frp/Makefile
-sed -i 's/20210116.0/20230206.0/g' feeds/packages/net/udpspeeder/Makefile
-sed -i 's/657ae24dfd592a1f6f114342231b24d09baec712957969f425477b9f9fd5994a/c6b0c45e971360b25cd49be0369e94b2fb12f649d39c7e60c172c14a9e3a4e0d/g' feeds/packages/net/udpspeeder/Makefile
-sed -i 's/20230207/20240107/g' feeds/packages/net/kcptun/Makefile
-sed -i 's/09054b52d5799a8e47edb36f2db335d929d5bbb63a26f7ba2fe03c64ec39d550/4a21033a3558fc9089303505457eead5366af961a7cd56f1856e54ef4d65a1e7/g' feeds/packages/net/kcptun/Makefile
 
 cp -f feeds/diy/changen/targetmk include/target.mk
 cp -f feeds/diy/changen/targetMakefile target/linux/x86/Makefile
 cp -f feeds/diy/changen/softethervpn feeds/luci/applications/luci-app-softethervpn/root/usr/share/softethervpn/firewall.include
 rm -rf feeds/luci/applications/luci-app-wrtbwmon
 cp -rf feeds/diy/luci-app-wrtbwmon feeds/luci/applications/luci-app-wrtbwmon
+rm -rf feeds/packages/net/udpspeeder
+cp -rf feeds/diy/udpspeeder feeds/packages/net/udpspeeder
 
 sed -n 's/^PKG_VERSION:=//p' feeds/passwall2/luci-app-passwall2/Makefile | xargs -I {} sed -i "s/DIYVERSION/{}/g" feeds/diy/changen/passwallMakefile
 cp -f feeds/diy/changen/passwallMakefile feeds/passwall2/luci-app-passwall2/Makefile
