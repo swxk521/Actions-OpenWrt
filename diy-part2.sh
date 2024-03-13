@@ -17,8 +17,8 @@ sed -i 's/100/200/g' feeds/luci/applications/luci-app-vlmcsd/luasrc/controller/v
 sed -i 's/100/199/g' feeds/luci/applications/luci-app-frpc/luasrc/controller/frp.lua
 sed -i 's/99/198/g' feeds/luci/applications/luci-app-frps/luasrc/controller/frps.lua
 
-sed -i 's/0.53.2/0.54.0/g' feeds/packages/net/frp/Makefile
-sed -i 's/ff2a4f04e7732bc77730304e48f97fdd062be2b142ae34c518ab9b9d7a3b32ec/c09d8610b5eb02c0b1851459ace7751fe80a06b2373a6d5d40631a08e8ac64ae/g' feeds/packages/net/frp/Makefile
+sed -i 's/0.53.2/0.55.1/g' feeds/packages/net/frp/Makefile
+sed -i 's/ff2a4f04e7732bc77730304e48f97fdd062be2b142ae34c518ab9b9d7a3b32ec/4d13675c330ca07d532f7a2ebc72fdc011487fe318f2ee645842a3fa4b23c966/g' feeds/packages/net/frp/Makefile
 
 cp -f feeds/diy/changen/targetmk include/target.mk
 cp -f feeds/diy/changen/targetMakefile target/linux/x86/Makefile
