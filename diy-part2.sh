@@ -16,6 +16,7 @@ sed -i 's/default 400/default 1000/g' config/Config-images.in
 sed -i 's/100/200/g' feeds/luci/applications/luci-app-vlmcsd/luasrc/controller/vlmcsd.lua
 sed -i 's/100/199/g' feeds/luci/applications/luci-app-frpc/luasrc/controller/frp.lua
 sed -i 's/99/198/g' feeds/luci/applications/luci-app-frps/luasrc/controller/frps.lua
+sed -i '/upnpd/d' feeds/luci/modules/luci-base/root/etc/init.d/ucitrack
 
 sed -i 's/0.53.2/0.55.1/g' feeds/packages/net/frp/Makefile
 sed -i 's/ff2a4f04e7732bc77730304e48f97fdd062be2b142ae34c518ab9b9d7a3b32ec/c655fdf679aa94ec9abefc625b79bfb12aecf36011e23c207e322a0748c6c693/g' feeds/packages/net/frp/Makefile
