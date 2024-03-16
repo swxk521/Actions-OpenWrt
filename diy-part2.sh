@@ -10,6 +10,9 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
+sed -i 's/1.8.8/1.8.9/g' feeds/passwallpackages/sing-box/Makefile
+sed -i 's/dfa64c1da309000998ff9c5fb35bac2795c9e88ce3c63ad47862ba6c3aeda74f/764c51bdf43af86e67b2657baf87bf67a2e1d8e42b0d39ee9ef7a9a414c658fc/g' feeds/passwallpackages/sing-box/Makefile
+
 sed -i 's/default "0"/default "5"/g' config/Config-images.in
 sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
 sed -i 's/default 400/default 1000/g' config/Config-images.in
