@@ -13,7 +13,6 @@
 sed -i 's/default "0"/default "5"/g' config/Config-images.in
 sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
 sed -i 's/default 400/default 1000/g' config/Config-images.in
-sed -i 's/100/200/g' feeds/luci/applications/luci-app-vlmcsd/luasrc/controller/vlmcsd.lua
 
 sed -i 's/0.53.2/0.55.1/g' feeds/packages/net/frp/Makefile
 sed -i 's/ff2a4f04e7732bc77730304e48f97fdd062be2b142ae34c518ab9b9d7a3b32ec/c655fdf679aa94ec9abefc625b79bfb12aecf36011e23c207e322a0748c6c693/g' feeds/packages/net/frp/Makefile
