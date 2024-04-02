@@ -33,5 +33,4 @@ cp -f feeds/diy/changen/passwallMakefile feeds/passwall2/luci-app-passwall2/Make
 cp -f feeds/diy/changen/v2ray-geodata feeds/passwallpackages/v2ray-geodata/Makefile
 cp -f feeds/diy/changen/v2ray-geodata feeds/packages/net/v2ray-geodata/Makefile
 
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
+cp -f feeds/diy/changen/kms feeds/luci/applications/luci-app-vlmcsd/root/etc/init.d/kms
