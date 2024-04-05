@@ -19,7 +19,6 @@ sed -i 's/ff2a4f04e7732bc77730304e48f97fdd062be2b142ae34c518ab9b9d7a3b32ec/08454
 
 cp -f feeds/diy/changen/targetmk include/target.mk
 cp -f feeds/diy/changen/targetMakefile target/linux/x86/Makefile
-cp -f feeds/diy/changen/softethervpn feeds/luci/applications/luci-app-softethervpn/root/usr/share/softethervpn/firewall.include
 rm -rf feeds/luci/applications/luci-app-wrtbwmon
 cp -rf feeds/diy/luci-app-wrtbwmon feeds/luci/applications/luci-app-wrtbwmon
 rm -rf feeds/packages/net/udpspeeder
