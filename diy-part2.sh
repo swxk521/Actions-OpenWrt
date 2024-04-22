@@ -26,8 +26,8 @@ cp -rf feeds/diy/udpspeeder feeds/packages/net/udpspeeder
 rm -rf feeds/packages/net/kcptun
 cp -rf feeds/diy/kcptun feeds/packages/net/kcptun
 
-sed -n 's/^PKG_VERSION:=//p' feeds/passwall2/luci-app-passwall2/Makefile | xargs -I {} sed -i "s/DIYVERSION/{}/g" feeds/diy/changen/passwallMakefile
-cp -f feeds/diy/changen/passwallMakefile feeds/passwall2/luci-app-passwall2/Makefile
+sed -n 's/^PKG_VERSION:=//p' feeds/passwall/luci-app-passwall/Makefile | xargs -I {} sed -i "s/DIYVERSION/{}/g" feeds/diy/changen/passwallMakefile
+cp -f feeds/diy/changen/passwallMakefile feeds/passwall/luci-app-passwall/Makefile
 
 cp -f feeds/diy/changen/v2ray-geodata feeds/passwallpackages/v2ray-geodata/Makefile
 cp -f feeds/diy/changen/v2ray-geodata feeds/packages/net/v2ray-geodata/Makefile
