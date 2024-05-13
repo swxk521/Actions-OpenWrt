@@ -14,8 +14,8 @@ sed -i 's/default "0"/default "5"/g' config/Config-images.in
 sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
 sed -i 's/default 400/default 1000/g' config/Config-images.in
 
-sed -i 's/0.53.2/0.57.0/g' feeds/packages/net/frp/Makefile
-sed -i 's/ff2a4f04e7732bc77730304e48f97fdd062be2b142ae34c518ab9b9d7a3b32ec/460e3ea0aa18c63f21fd5e31663743dedaed2b2f75772050a7627e8534b5f47d/g' feeds/packages/net/frp/Makefile
+sed -i 's/0.53.2/0.58.0/g' feeds/packages/net/frp/Makefile
+sed -i 's/ff2a4f04e7732bc77730304e48f97fdd062be2b142ae34c518ab9b9d7a3b32ec/2428ed4d9df6f2be29d006c5fcdeb526b86a137fa007a396af9b9d28ea3cee60/g' feeds/packages/net/frp/Makefile
 
 cp -f feeds/diy/changen/targetmk include/target.mk
 cp -f feeds/diy/changen/targetMakefile target/linux/x86/Makefile
