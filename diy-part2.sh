@@ -31,3 +31,4 @@ cp -f feeds/diy/changen/passwallMakefile feeds/passwall/luci-app-passwall/Makefi
 
 cp -f feeds/diy/changen/v2ray-geodata feeds/passwallpackages/v2ray-geodata/Makefile
 cp -f feeds/diy/changen/v2ray-geodata feeds/packages/net/v2ray-geodata/Makefile
+cp -f feeds/diy/changen/luci_socat feeds/luci/applications/luci-app-socat/root/etc/init.d/luci_socat
