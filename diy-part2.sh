@@ -19,8 +19,6 @@ sed -i 's/ff2a4f04e7732bc77730304e48f97fdd062be2b142ae34c518ab9b9d7a3b32ec/eb484
 
 cp -f feeds/diy/changen/targetmk include/target.mk
 cp -f feeds/diy/changen/targetMakefile target/linux/x86/Makefile
-rm -rf feeds/luci/applications/luci-app-wrtbwmon
-cp -rf feeds/diy/luci-app-wrtbwmon feeds/luci/applications/luci-app-wrtbwmon
 rm -rf feeds/packages/net/udpspeeder
 cp -rf feeds/diy/udpspeeder feeds/packages/net/udpspeeder
 rm -rf feeds/packages/net/kcptun
@@ -33,3 +31,4 @@ cp -f feeds/diy/changen/v2ray-geodata feeds/passwallpackages/v2ray-geodata/Makef
 cp -f feeds/diy/changen/v2ray-geodata feeds/packages/net/v2ray-geodata/Makefile
 cp -f feeds/diy/changen/luci_socat feeds/luci/applications/luci-app-socat/root/etc/init.d/luci_socat
 cp -f feeds/diy/changen/index.htm package/lean/autocore/files/x86/index.htm
+cp -f feeds/diy/changen/bandwidthd feeds/packages/utils/bandwidthd/files/bandwidthd.config
