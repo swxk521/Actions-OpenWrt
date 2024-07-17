@@ -16,8 +16,6 @@ sed -i 's/default 400/default 1000/g' config/Config-images.in
 
 sed -i 's/0.53.2/0.59.0/g' feeds/packages/net/frp/Makefile
 sed -i 's/ff2a4f04e7732bc77730304e48f97fdd062be2b142ae34c518ab9b9d7a3b32ec/eb4848119a9684b7762171d7633aa5ee29d195e63f53e89e7b549096bdf4a5a9/g' feeds/packages/net/frp/Makefile
-sed -i 's/443/8443/g' feeds/packages/net/nginx-util/files/nginx.config
-sed -i 's/80/8080/g' feeds/packages/net/nginx-util/files/nginx.config
 
 cp -f feeds/diy/changen/targetmk include/target.mk
 cp -f feeds/diy/changen/targetMakefile target/linux/x86/Makefile
@@ -34,3 +32,4 @@ cp -f feeds/diy/changen/v2ray-geodata feeds/packages/net/v2ray-geodata/Makefile
 cp -f feeds/diy/changen/luci_socat feeds/luci/applications/luci-app-socat/root/etc/init.d/luci_socat
 cp -f feeds/diy/changen/index.htm package/lean/autocore/files/x86/index.htm
 cp -f feeds/diy/changen/bandwidthd feeds/packages/utils/bandwidthd/files/bandwidthd.config
+cp -f feeds/diy/changen/nginx.config feeds/packages/net/nginx-util/files/nginx.config
