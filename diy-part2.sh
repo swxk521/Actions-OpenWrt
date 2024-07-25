@@ -12,7 +12,7 @@
 
 sed -i 's/default "0"/default "1"/g' config/Config-images.in
 sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
-sed -i 's/default 400/default 2000/g' config/Config-images.in
+sed -i 's/default 448/default 2000/g' config/Config-images.in
 
 sed -i 's/0.53.2/0.59.0/g' feeds/packages/net/frp/Makefile
 sed -i 's/ff2a4f04e7732bc77730304e48f97fdd062be2b142ae34c518ab9b9d7a3b32ec/eb4848119a9684b7762171d7633aa5ee29d195e63f53e89e7b549096bdf4a5a9/g' feeds/packages/net/frp/Makefile
