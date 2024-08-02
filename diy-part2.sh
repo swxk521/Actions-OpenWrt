@@ -13,12 +13,13 @@
 sed -i 's/default "0"/default "5"/g' config/Config-images.in
 sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
 sed -i 's/default 448/default 2000/g' config/Config-images.in
+sed -i 's/automount //g' target/linux/x86/Makefile
+sed -i 's/autosamba //g' target/linux/x86/Makefile
 
 sed -i 's/0.53.2/0.59.0/g' feeds/packages/net/frp/Makefile
 sed -i 's/ff2a4f04e7732bc77730304e48f97fdd062be2b142ae34c518ab9b9d7a3b32ec/eb4848119a9684b7762171d7633aa5ee29d195e63f53e89e7b549096bdf4a5a9/g' feeds/packages/net/frp/Makefile
 
 cp -f feeds/diy/changen/targetmk include/target.mk
-cp -f feeds/diy/changen/targetMakefile target/linux/x86/Makefile
 rm -rf feeds/packages/net/udpspeeder
 cp -rf feeds/diy/udpspeeder feeds/packages/net/udpspeeder
 rm -rf feeds/packages/net/kcptun
