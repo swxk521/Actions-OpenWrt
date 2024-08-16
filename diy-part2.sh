@@ -31,6 +31,7 @@ cp -f feeds/diy/changen/passwallMakefile feeds/passwall2/luci-app-passwall2/Make
 cp -f feeds/diy/changen/v2ray-geodata feeds/passwallpackages/v2ray-geodata/Makefile
 cp -f feeds/diy/changen/v2ray-geodata feeds/packages/net/v2ray-geodata/Makefile
 cp -f feeds/diy/changen/socat feeds/packages/net/socat/Makefile
+cp -f feeds/diy/changen/luci_socat feeds/luci/applications/luci-app-socat/root/etc/init.d/luci_socat
 cp -f feeds/diy/changen/index.htm package/lean/autocore/files/x86/index.htm
 cp -f feeds/diy/changen/bandwidthd feeds/packages/utils/bandwidthd/files/bandwidthd.config
 cp -f feeds/diy/changen/nginx.config feeds/packages/net/nginx-util/files/nginx.config
