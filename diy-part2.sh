@@ -35,4 +35,4 @@ cp -f feeds/diy/changen/socat feeds/packages/net/socat/Makefile
 cp -f feeds/diy/changen/luci_socat feeds/luci/applications/luci-app-socat/root/etc/init.d/luci_socat
 cp -f feeds/diy/changen/nginx.config feeds/packages/net/nginx-util/files/nginx.config
 
-git clone  https://github.com/gdy666/luci-app-lucky package/lucky
+git clone  https://github.com/gdy666/luci-app-lucky package/luciapplucky
