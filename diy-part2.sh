@@ -38,5 +38,3 @@ cp -f feeds/diy/changen/index.htm package/lean/autocore/files/x86/index.htm
 cp -f feeds/diy/changen/v2ray-geodata feeds/passwallpackages/v2ray-geodata/Makefile
 cp -f feeds/diy/changen/v2ray-geodata feeds/packages/net/v2ray-geodata/Makefile
 cp -f feeds/diy/changen/nginx.config feeds/packages/net/nginx-util/files/nginx.config
-
-git clone  https://github.com/gdy666/luci-app-lucky package/luciapplucky
