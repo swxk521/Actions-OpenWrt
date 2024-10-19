@@ -21,5 +21,6 @@
 echo 'src-git diy https://github.com/swxk521/diy' >>feeds.conf.default
 echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
 echo 'src-git passwallpackages https://github.com/xiaorouji/openwrt-passwall-packages' >>feeds.conf.default
+echo 'src-git luciapplucky https://github.com/gdy666/luci-app-lucky' >>feeds.conf.default
 
 sed -i 's/luci\.git;openwrt-23\.05/luci/g' feeds.conf.default
