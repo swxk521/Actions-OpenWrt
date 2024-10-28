@@ -24,3 +24,16 @@ cp -f feeds/diy/changen/index.htm package/lean/autocore/files/x86/index.htm
 cp -f feeds/diy/changen/v2ray-geodata feeds/passwallpackages/v2ray-geodata/Makefile
 cp -f feeds/diy/changen/v2ray-geodata feeds/packages/net/v2ray-geodata/Makefile
 cp -f feeds/diy/changen/nginx.config feeds/packages/net/nginx-util/files/nginx.config
+
+rm -rf feeds/packages/net/frp
+cp -rf feeds/diy/frp feeds/packages/net/frp
+rm -rf feeds/packages/net/udpspeeder
+cp -rf feeds/diy/udpspeeder feeds/packages/net/udpspeeder
+rm -rf feeds/packages/net/kcptun
+cp -rf feeds/diy/kcptun feeds/packages/net/kcptun
+rm -rf feeds/packages/net/sing-box
+cp -rf feeds/passwallpackages/sing-box feeds/packages/net/sing-box
+rm -rf feeds/packages/net/xray-core
+cp -rf feeds/passwallpackages/xray-core feeds/packages/net/xray-core
+rm -rf feeds/packages/net/lucky
+cp -rf feeds/luciapplucky/lucky feeds/packages/net/lucky
