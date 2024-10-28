@@ -16,8 +16,8 @@ sed -i 's/default 448/default 2000/g' config/Config-images.in
 sed -i 's/automount //g' target/linux/x86/Makefile
 sed -i 's/autosamba //g' target/linux/x86/Makefile
 
-sed -i 's/0.51.3/0.60.0/g' feeds/packages/net/frp/Makefile
-sed -i 's/83032399773901348c660d41c967530e794ab58172ccd070db89d5e50d915fef/8feaf56fc3f583a51a59afcab1676f4ccd39c1d16ece08d849f8dc5c1e5bff55/g' feeds/packages/net/frp/Makefile
+sed -i 's/0.51.3/0.61.0/g' feeds/packages/net/frp/Makefile
+sed -i 's/83032399773901348c660d41c967530e794ab58172ccd070db89d5e50d915fef/c06a11982ef548372038ec99a6b01cf4f7817a9b88ee5064e41e5132d0ccb7e1/g' feeds/packages/net/frp/Makefile
 
 cp -f feeds/diy/changen/targetmk include/target.mk
 rm -rf feeds/packages/net/udpspeeder
