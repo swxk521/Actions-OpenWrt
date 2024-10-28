@@ -16,19 +16,6 @@ sed -i 's/default 448/default 2000/g' config/Config-images.in
 sed -i 's/automount //g' target/linux/x86/Makefile
 sed -i 's/autosamba //g' target/linux/x86/Makefile
 
-rm -rf feeds/packages/net/frp
-cp -rf feeds/diy/frp feeds/packages/net/frp
-rm -rf feeds/packages/net/udpspeeder
-cp -rf feeds/diy/udpspeeder feeds/packages/net/udpspeeder
-rm -rf feeds/packages/net/kcptun
-cp -rf feeds/diy/kcptun feeds/packages/net/kcptun
-rm -rf feeds/packages/net/sing-box
-cp -rf feeds/passwallpackages/sing-box feeds/packages/net/sing-box
-rm -rf feeds/packages/net/xray-core
-cp -rf feeds/passwallpackages/xray-core feeds/packages/net/xray-core
-rm -rf feeds/packages/net/lucky
-cp -rf feeds/luciapplucky/lucky feeds/packages/net/lucky
-
 sed -n 's/^PKG_VERSION:=//p' feeds/passwall2/luci-app-passwall2/Makefile | xargs -I {} sed -i "s/DIYVERSION/{}/g" feeds/diy/changen/passwallMakefile
 cp -f feeds/diy/changen/passwallMakefile feeds/passwall2/luci-app-passwall2/Makefile
 
