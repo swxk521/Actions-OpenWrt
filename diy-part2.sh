@@ -19,6 +19,7 @@ sed -i 's/autosamba //g' target/linux/x86/Makefile
 sed -n 's/^PKG_VERSION:=//p' feeds/passwall2/luci-app-passwall2/Makefile | xargs -I {} sed -i "s/DIYVERSION/{}/g" feeds/diy/changen/passwallMakefile
 cp -f feeds/diy/changen/passwallMakefile feeds/passwall2/luci-app-passwall2/Makefile
 
+cp -f feeds/diy/changen/targetmk include/target.mk
 cp -f feeds/diy/changen/index.htm package/lean/autocore/files/x86/index.htm
 cp -f feeds/diy/changen/v2ray-geodata feeds/passwallpackages/v2ray-geodata/Makefile
 cp -f feeds/diy/changen/v2ray-geodata feeds/packages/net/v2ray-geodata/Makefile
