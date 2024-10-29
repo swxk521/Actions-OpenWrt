@@ -19,21 +19,14 @@ sed -i 's/autosamba //g' target/linux/x86/Makefile
 sed -n 's/^PKG_VERSION:=//p' feeds/passwall2/luci-app-passwall2/Makefile | xargs -I {} sed -i "s/DIYVERSION/{}/g" feeds/diy/changen/passwallMakefile
 cp -f feeds/diy/changen/passwallMakefile feeds/passwall2/luci-app-passwall2/Makefile
 
+sed -i 's/20230207/20240919/g' feeds/packages/net/kcptun/Makefile
+sed -i 's/09054b52d5799a8e47edb36f2db335d929d5bbb63a26f7ba2fe03c64ec39d550/80c2dfe277196e5aac19272f30d83b588f57f6e180b22c5865b7864080cfed09/g' feeds/packages/net/kcptun/Makefile
+sed -i 's/0.51.3/0.61.0/g' feeds/packages/net/frp/Makefile
+sed -i 's/83032399773901348c660d41c967530e794ab58172ccd070db89d5e50d915fef/c06a11982ef548372038ec99a6b01cf4f7817a9b88ee5064e41e5132d0ccb7e1/g' feeds/packages/net/frp/Makefile
+
 cp -f feeds/diy/changen/targetmk include/target.mk
 cp -f feeds/diy/changen/index.htm package/lean/autocore/files/x86/index.htm
 cp -f feeds/diy/changen/v2ray-geodata feeds/passwallpackages/v2ray-geodata/Makefile
 cp -f feeds/diy/changen/v2ray-geodata feeds/packages/net/v2ray-geodata/Makefile
 cp -f feeds/diy/changen/nginx.config feeds/packages/net/nginx-util/files/nginx.config
 
-rm -rf feeds/packages/net/frp
-cp -rf feeds/diy/frp feeds/packages/net/frp
-rm -rf feeds/packages/net/udpspeeder
-cp -rf feeds/diy/udpspeeder feeds/packages/net/udpspeeder
-rm -rf feeds/packages/net/kcptun
-cp -rf feeds/diy/kcptun feeds/packages/net/kcptun
-rm -rf feeds/packages/net/sing-box
-cp -rf feeds/passwallpackages/sing-box feeds/packages/net/sing-box
-rm -rf feeds/packages/net/xray-core
-cp -rf feeds/passwallpackages/xray-core feeds/packages/net/xray-core
-rm -rf feeds/packages/net/lucky
-cp -rf feeds/luciapplucky/lucky feeds/packages/net/lucky
