@@ -21,8 +21,8 @@ cp -f feeds/diy/changen/passwallMakefile feeds/passwall2/luci-app-passwall2/Make
 
 sed -i 's/20230207/20240919/g' feeds/packages/net/kcptun/Makefile
 sed -i 's/09054b52d5799a8e47edb36f2db335d929d5bbb63a26f7ba2fe03c64ec39d550/80c2dfe277196e5aac19272f30d83b588f57f6e180b22c5865b7864080cfed09/g' feeds/packages/net/kcptun/Makefile
-sed -i 's/0.51.3/0.54.0/g' feeds/packages/net/frp/Makefile
-sed -i 's/83032399773901348c660d41c967530e794ab58172ccd070db89d5e50d915fef/c09d8610b5eb02c0b1851459ace7751fe80a06b2373a6d5d40631a08e8ac64ae/g' feeds/packages/net/frp/Makefile
+# sed -i 's/0.51.3/0.54.0/g' feeds/packages/net/frp/Makefile
+# sed -i 's/83032399773901348c660d41c967530e794ab58172ccd070db89d5e50d915fef/c09d8610b5eb02c0b1851459ace7751fe80a06b2373a6d5d40631a08e8ac64ae/g' feeds/packages/net/frp/Makefile
 
 cp -f feeds/diy/changen/targetmk include/target.mk
 cp -f feeds/diy/changen/index.htm package/lean/autocore/files/x86/index.htm
