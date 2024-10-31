@@ -19,8 +19,8 @@ sed -i 's/autosamba //g' target/linux/x86/Makefile
 sed -n 's/^PKG_VERSION:=//p' feeds/passwall2/luci-app-passwall2/Makefile | xargs -I {} sed -i "s/DIYVERSION/{}/g" feeds/diy/changen/passwallMakefile
 cp -f feeds/diy/changen/passwallMakefile feeds/passwall2/luci-app-passwall2/Makefile
 
-sed -i 's/20230207/20240919/g' feeds/packages/net/kcptun/Makefile
-sed -i 's/09054b52d5799a8e47edb36f2db335d929d5bbb63a26f7ba2fe03c64ec39d550/80c2dfe277196e5aac19272f30d83b588f57f6e180b22c5865b7864080cfed09/g' feeds/packages/net/kcptun/Makefile
+# sed -i 's/20230207/20240919/g' feeds/packages/net/kcptun/Makefile
+# sed -i 's/09054b52d5799a8e47edb36f2db335d929d5bbb63a26f7ba2fe03c64ec39d550/80c2dfe277196e5aac19272f30d83b588f57f6e180b22c5865b7864080cfed09/g' feeds/packages/net/kcptun/Makefile
 
 cp -f feeds/diy/changen/targetmk include/target.mk
 cp -f feeds/diy/changen/index.htm package/lean/autocore/files/x86/index.htm
