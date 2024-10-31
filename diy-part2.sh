@@ -24,7 +24,5 @@ sed -i 's/09054b52d5799a8e47edb36f2db335d929d5bbb63a26f7ba2fe03c64ec39d550/80c2d
 
 cp -f feeds/diy/changen/targetmk include/target.mk
 cp -f feeds/diy/changen/index.htm package/lean/autocore/files/x86/index.htm
-cp -f feeds/diy/changen/v2ray-geodata feeds/passwallpackages/v2ray-geodata/Makefile
-cp -f feeds/diy/changen/v2ray-geodata feeds/packages/net/v2ray-geodata/Makefile
 cp -f feeds/diy/changen/nginx.config feeds/packages/net/nginx-util/files/nginx.config
 
