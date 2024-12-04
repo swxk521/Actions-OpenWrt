@@ -13,7 +13,6 @@
 sed -i 's/default "0"/default "3"/g' config/Config-images.in
 sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
 sed -i 's/default 448/default 2000/g' config/Config-images.in
-sed -i 's/automount //g' target/linux/x86/Makefile
 sed -i 's/autosamba //g' target/linux/x86/Makefile
 sed -i 's/6\.6/6\.1/g' target/linux/x86/Makefile
 
