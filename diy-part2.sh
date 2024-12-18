@@ -22,8 +22,8 @@ cp -f feeds/diy/changen/passwallMakefile feeds/passwall2/luci-app-passwall2/Make
 sed -i 's/20230207/20241119/g' feeds/packages/net/kcptun/Makefile
 sed -i 's/09054b52d5799a8e47edb36f2db335d929d5bbb63a26f7ba2fe03c64ec39d550/a591b539e6a0d2a3b652fa5825fc81b4c3b087412d8692403b0b831fd11014b2/g' feeds/packages/net/kcptun/Makefile
 
-sed -i 's/0.51.3/0.61.0/g' feeds/packages/net/frp/Makefile
-sed -i 's/83032399773901348c660d41c967530e794ab58172ccd070db89d5e50d915fef/c06a11982ef548372038ec99a6b01cf4f7817a9b88ee5064e41e5132d0ccb7e1/g' feeds/packages/net/frp/Makefile
+sed -i 's/0.51.3/0.61.1/g' feeds/packages/net/frp/Makefile
+sed -i 's/83032399773901348c660d41c967530e794ab58172ccd070db89d5e50d915fef/95c567188d5635a7ac8897a6f93ae0568d0ac4892581a96c89874a992dd6a73c/g' feeds/packages/net/frp/Makefile
 sed -i 's/full.ini/full_example.toml/g' feeds/packages/net/frp/Makefile
 echo -n "" > feeds/packages/net/frp/files/frpc.init
 echo -n "" > feeds/packages/net/frp/files/frps.init
