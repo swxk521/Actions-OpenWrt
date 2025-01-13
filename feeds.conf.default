@@ -1,0 +1,7 @@
+src-git diy https://github.com/swxk521/diy
+src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2
+src-git passwallpackages https://github.com/xiaorouji/openwrt-passwall-packages
+src-git packages https://github.com/coolsnowwolf/packages
+src-git luci https://github.com/coolsnowwolf/luci
+src-git routing https://github.com/coolsnowwolf/routing
+src-git telephony https://github.com/coolsnowwolf/telephony.git
