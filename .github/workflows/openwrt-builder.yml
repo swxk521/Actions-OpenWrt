@@ -147,5 +147,5 @@ jobs:
     - name: Upload passwall
       uses: actions/upload-artifact@main
       with:
-        name: passwall2
+        name: passwall
         path: openwrt/bin/packages/x86_64/passwall/*passwall*
