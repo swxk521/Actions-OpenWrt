@@ -26,7 +26,7 @@ sed -i 's/autosamba //g' target/linux/x86/Makefile
 
 sed -n 's/^PKG_VERSION:=//p' feeds/passwall/luci-app-passwall/Makefile | xargs -I {} sed -i "s/DIYVERSION/{}/g" feeds/diy/changen/passwallMakefile
 sed -n 's/^PKG_RELEASE:=//p' feeds/passwall/luci-app-passwall/Makefile | xargs -I {} sed -i "s/DIYRELEASE/{}/g" feeds/diy/changen/passwallMakefile
-cp -f feeds/diy/changen/passwallMakefile feeds/passwall/luci-app-passwall/Makefile
+cp -f feeds/diy/changen/passwallMakefile feeds/passwall2/luci-app-passwall2/Makefile
 
 cp -f feeds/diy/changen/sysctl-net-core-mem.conf feeds/packages/net/nlbwmon/files/sysctl-net-core-mem.conf
 cp -f feeds/diy/changen/haproxymakefile feeds/packages/net/haproxy/Makefile
