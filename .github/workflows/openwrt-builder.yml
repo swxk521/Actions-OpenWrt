@@ -181,8 +181,8 @@ jobs:
         name: efi.img.gz
         path: openwrt/bin/targets/x86/64/*efi.img.gz
 
-    - name: Upload passwall
+    - name: Upload passwall2
       uses: actions/upload-artifact@main
       with:
-        name: passwall
+        name: passwall2
         path: openwrt/bin/packages/x86_64/passwall2/*passwall*
