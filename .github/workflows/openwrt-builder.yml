@@ -185,4 +185,4 @@ jobs:
       uses: actions/upload-artifact@main
       with:
         name: passwall
-        path: openwrt/bin/packages/x86_64/passwall/*passwall*
+        path: openwrt/bin/packages/x86_64/passwall2/*passwall*
