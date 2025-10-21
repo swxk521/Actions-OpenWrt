@@ -24,8 +24,8 @@ sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generat
 sed -i 's/default 448/default 8000/g' config/Config-images.in
 sed -i 's/autosamba //g' target/linux/x86/Makefile
 
-sed -n 's/^PKG_VERSION:=//p' feeds/passwall/luci-app-passwall/Makefile | xargs -I {} sed -i "s/DIYVERSION/{}/g" feeds/diy/changen/passwallMakefile
-sed -n 's/^PKG_RELEASE:=//p' feeds/passwall/luci-app-passwall/Makefile | xargs -I {} sed -i "s/DIYRELEASE/{}/g" feeds/diy/changen/passwallMakefile
+sed -n 's/^PKG_VERSION:=//p' feeds/passwall2/luci-app-passwall2/Makefile | xargs -I {} sed -i "s/DIYVERSION/{}/g" feeds/diy/changen/passwallMakefile
+sed -n 's/^PKG_RELEASE:=//p' feeds/passwall2/luci-app-passwall2/Makefile | xargs -I {} sed -i "s/DIYRELEASE/{}/g" feeds/diy/changen/passwallMakefile
 cp -f feeds/diy/changen/passwallMakefile feeds/passwall2/luci-app-passwall2/Makefile
 
 cp -f feeds/diy/changen/sysctl-net-core-mem.conf feeds/packages/net/nlbwmon/files/sysctl-net-core-mem.conf
