@@ -1,4 +1,4 @@
-src-git diy https://github.com/swxk521/diy
+src-git diy https://github.com/swxk521/diyyy
 src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2
 src-git passwallpackages https://github.com/xiaorouji/openwrt-passwall-packages
 src-git packages https://github.com/coolsnowwolf/packages
