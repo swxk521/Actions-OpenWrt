@@ -28,7 +28,8 @@ sed -n 's/^PKG_VERSION:=//p' feeds/passwall2/luci-app-passwall2/Makefile | xargs
 sed -n 's/^PKG_RELEASE:=//p' feeds/passwall2/luci-app-passwall2/Makefile | xargs -I {} sed -i "s/DIYRELEASE/{}/g" feeds/diy/changen/passwallMakefile
 cp -f feeds/diy/changen/passwallMakefile feeds/passwall2/luci-app-passwall2/Makefile
 
-cp -f feeds/diy/changen/sysctl-net-core-mem.conf feeds/packages/net/nlbwmon/files/sysctl-net-core-mem.conf
+cp -f feeds/diy/changen/99-sysctl.conf package/base-files/files/etc/sysctl.d/99-sysctl.conf
+cp -f feeds/diy/changen/dnsmasq.init package/network/services/dnsmasq/files/dnsmasq.init
 cp -f feeds/diy/changen/haproxymakefile feeds/packages/net/haproxy/Makefile
 cp -f feeds/diy/changen/targetmk include/target.mk
 cp -f feeds/diy/changen/index.htm package/lean/autocore/files/x86/index.htm
