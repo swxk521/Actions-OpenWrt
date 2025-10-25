@@ -32,4 +32,4 @@ cp -f feeds/diy/changen/99-sysctl.conf package/base-files/files/etc/sysctl.d/99-
 cp -f feeds/diy/changen/dnsmasq.init package/network/services/dnsmasq/files/dnsmasq.init
 cp -f feeds/diy/changen/haproxymakefile feeds/packages/net/haproxy/Makefile
 cp -f feeds/diy/changen/targetmk include/target.mk
-cp -f feeds/diy/changen/index.htm package/lean/autocore/files/x86/index.htm
+# cp -f feeds/diy/changen/index.htm package/lean/autocore/files/x86/index.htm
