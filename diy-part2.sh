@@ -24,7 +24,7 @@ sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generat
 sed -i 's/default 448/default 2000/g' config/Config-images.in
 sed -i 's/autosamba //g' target/linux/x86/Makefile
 sed -i 's/automount //g' target/linux/x86/Makefile
-sed -i 's/6.12/6.6/g' target/linux/x86/Makefile
+# sed -i 's/6.12/6.6/g' target/linux/x86/Makefile
 sed -i 's/config_foreach chk_en samba4/config_foreach chk_en samba/g' feeds/packages/‎net/samba4/files/smb.auto‎
 
 sed -n 's/^PKG_VERSION:=//p' feeds/passwall2/luci-app-passwall2/Makefile | xargs -I {} sed -i "s/DIYVERSION/{}/g" feeds/diy/changen/passwallMakefile
