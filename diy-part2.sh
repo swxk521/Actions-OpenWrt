@@ -20,7 +20,7 @@
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
 
-sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/luci/bin/config_generate
 sed -i 's/default 448/default 2000/g' config/Config-images.in
 sed -i 's/autosamba //g' target/linux/x86/Makefile
 sed -i 's/automount //g' target/linux/x86/Makefile
