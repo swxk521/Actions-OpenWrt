@@ -37,6 +37,3 @@ cp -f feeds/diy/changen/dnsmasq.init package/network/services/dnsmasq/files/dnsm
 cp -f feeds/diy/changen/haproxymakefile feeds/packages/net/haproxy/Makefile
 cp -f feeds/diy/changen/targetmk include/target.mk
 cp -f feeds/diy/changen/index.htm package/lean/autocore/files/x86/index.htm
-
-sed -i 's/PATCH:=5/PATCH:=6/g' feeds/packages/lang/golang/golang/Makefile
-sed -i 's/22a5fd0a91efcd28a1b0537106b9959b2804b61f59c3758b51e8e5429c1a954f/58cbf771e44d76de6f56d19e33b77d745a1e489340922875e46585b975c2b059/g' feeds/packages/lang/golang/golang/Makefile
