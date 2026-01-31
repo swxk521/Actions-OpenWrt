@@ -28,11 +28,11 @@ env:
   TZ: Asia/Shanghai
 
 jobs:
-  build:
+  build_openwrt:
+    name: Build OpenWrt Firmware
     runs-on: ubuntu-22.04
 
-  steps:
-
+    steps:
     - name: Space cleanup and Initialization environment
       env:
           DEBIAN_FRONTEND: noninteractive
