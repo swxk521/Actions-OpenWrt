@@ -37,3 +37,6 @@ cp -f feeds/diy/changen/dnsmasq.init package/network/services/dnsmasq/files/dnsm
 cp -f feeds/diy/changen/haproxymakefile feeds/packages/net/haproxy/Makefile
 cp -f feeds/diy/changen/targetmk include/target.mk
 cp -f feeds/diy/changen/index.htm package/lean/autocore/files/x86/index.htm
+
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 26.x feeds/packages/lang/golang
