@@ -1,5 +1,5 @@
 src-git diy https://github.com/swxk521/diy
-src-git natmap https://github.com/swxk521/luci-app-natmap
+src-git diyy https://github.com/swxk521/luci-app-natmap
 src-git passwall2 https://github.com/Openwrt-Passwall/openwrt-passwall2
 src-git passwallpackages https://github.com/Openwrt-Passwall/openwrt-passwall-packages
 src-git packages https://github.com/coolsnowwolf/packages
