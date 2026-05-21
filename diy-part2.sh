@@ -21,17 +21,14 @@
 
 
 sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/luci/bin/config_generate
-sed -i 's/default 448/default 2000/g' config/Config-images.in
+sed -i 's/default 160/default 2000/g' config/Config-images.in
 
 sed -n 's/^PKG_VERSION:=//p' feeds/passwall2/luci-app-passwall2/Makefile | xargs -I {} sed -i "s/DIYVERSION/{}/g" feeds/diy/changen/passwallMakefile
 sed -n 's/^PKG_RELEASE:=//p' feeds/passwall2/luci-app-passwall2/Makefile | xargs -I {} sed -i "s/DIYRELEASE/{}/g" feeds/diy/changen/passwallMakefile
 cp -f feeds/diy/changen/passwallMakefile feeds/passwall2/luci-app-passwall2/Makefile
 
 cp -f feeds/diy/changen/99-sysctl.conf package/base-files/files/etc/sysctl.d/99-sysctl.conf
-sed -i '/sysctl/d' feeds/packages/net/nlbwmon/Makefile
-cp -f feeds/diy/changen/dnsmasq.init package/network/services/dnsmasq/files/dnsmasq.init
-cp -f feeds/diy/changen/targetmk include/target.mk
-cp -f feeds/diy/changen/index.htm package/lean/autocore/files/x86/index.htm
+cp -f feeds/diy/changen/X86Makefile target/linux/x86/Makefile
 
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 26.x feeds/packages/lang/golang
