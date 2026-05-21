@@ -1,4 +1,4 @@
-src-git diy https://github.com/swxk521/diy
+src-git diy https://github.com/swxk521/diy1
 src-git eqos https://github.com/sirpdboy/luci-app-eqosplus
 src-git time https://github.com/sirpdboy/luci-app-timecontrol
 src-git lucibandix https://github.com/timsaya/luci-app-bandix-plus
