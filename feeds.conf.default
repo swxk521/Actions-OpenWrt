@@ -1,5 +1,5 @@
 src-git diy https://github.com/swxk521/diy1
-src-git lucieqoss https://github.com/sirpdboy/luci-app-eqosplus
+src-git luci-app-eqosplus https://github.com/sirpdboy/luci-app-eqosplus
 src-git lucitimes https://github.com/sirpdboy/luci-app-timecontrol
 src-git lucibandix https://github.com/timsaya/luci-app-bandix-plus
 src-git bandix https://github.com/timsaya/openwrt-bandix-plus
