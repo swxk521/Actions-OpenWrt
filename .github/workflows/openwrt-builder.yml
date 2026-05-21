@@ -24,7 +24,7 @@ env:
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: true
-  UPLOAD_FIRMWARE: true
+  UPLOAD_FIRMWARE: false
   TZ: Asia/Shanghai
 
 jobs:
@@ -151,7 +151,7 @@ jobs:
       uses: actions/upload-artifact@main
       with:
         name: efi.img.gz
-        path: openwrt/bin/targets/x86/64/*efi.img.gz
+        path: openwrt/bin/targets/x86/64/*squashfs-combined-efi.img.gz
 
     - name: Upload passwall2
       uses: actions/upload-artifact@main
