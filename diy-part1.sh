@@ -18,5 +18,5 @@
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
 git clone https://github.com/sirpdboy/luci-app-timecontrol package/luci-app-timecontrol
-git clone https://github.com/timsaya/luci-app-bandix-plus package/luci-app-bandix-plus
-git clone https://github.com/timsaya/openwrt-bandix-plus package/openwrt-bandix-plus
+git clone https://github.com/timsaya/luci-app-bandix package/luci-app-bandix
+git clone https://github.com/timsaya/openwrt-bandix package/openwrt-bandix
