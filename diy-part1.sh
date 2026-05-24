@@ -16,7 +16,7 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-git clone https://github.com/swxk521/diy1 package/diy
+git clone https://github.com/swxk521/diy package/diy
 git clone https://github.com/Openwrt-Passwall/openwrt-passwall2 package/passwall2
 git clone https://github.com/Openwrt-Passwall/openwrt-passwall-packages package/passwallpackages
 git clone https://github.com/timsaya/luci-app-bandix package/luci-app-bandix
