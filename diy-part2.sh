@@ -28,8 +28,6 @@ sed -i 's/default 160/default 2000/g' config/Config-images.in
 sed -n 's/^PKG_VERSION:=//p' package/passwall2/luci-app-passwall2/Makefile | xargs -I {} sed -i "s/DIYVERSION/{}/g" package/diy/changen/passwallMakefile
 sed -n 's/^PKG_RELEASE:=//p' package/passwall2/luci-app-passwall2/Makefile | xargs -I {} sed -i "s/DIYRELEASE/{}/g" package/diy/changen/passwallMakefile
 cp -f package/diy/changen/passwallMakefile package/passwall2/luci-app-passwall2/Makefile
-
-cp -f package/diy/changen/99-sysctl.conf package/base-files/files/etc/sysctl.d/99-sysctl.conf
 cp -f package/diy/changen/X86Makefile target/linux/x86/Makefile
 
 rm -rf feeds/packages/lang/golang
