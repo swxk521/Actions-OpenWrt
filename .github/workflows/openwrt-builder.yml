@@ -77,7 +77,9 @@ jobs:
       working-directory: ./
       run: |
         df -hT $PWD
-        git clone $REPO_URL -b $REPO_BRANCH openwrt
+        # git clone $REPO_URL -b $REPO_BRANCH openwrt
+        curl https://codeload.github.com/immortalwrt/immortalwrt/tar.gz/refs/tags/v24.10.6 -o openwrt.tar.gz
+        tar -zxvf openwrt.tar.gz && mv immortalwrt-24.10.6 openwrt
 
     - name: Load custom feeds
       run: |
